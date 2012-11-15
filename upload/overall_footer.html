@@ -1,0 +1,84 @@
+			</div>
+			<!-- end page-body -->
+			
+			<div class="navbar">
+				<ul class="mainlevel-nav">
+	
+				<!-- IF not S_IS_BOT -->
+				<!-- IF S_WATCH_FORUM_LINK --><li <!-- IF S_WATCHING_FORUM -->class="icon-unsubscribe"<!-- ELSE -->class="icon-subscribe"<!-- ENDIF -->><a href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}">&nbsp;&nbsp;&nbsp;&nbsp;{S_WATCH_FORUM_TITLE}</a></li><!-- ENDIF -->
+				
+				<!-- IF U_WATCH_TOPIC --><li <!-- IF S_WATCHING_TOPIC -->class="icon-unsubscribe"<!-- ELSE -->class="icon-subscribe"<!-- ENDIF -->><a href="{U_WATCH_TOPIC}" title="{L_WATCH_TOPIC}">&nbsp;&nbsp;&nbsp;&nbsp;{L_WATCH_TOPIC}</a></li><!-- ENDIF -->
+				
+				<!-- IF U_BOOKMARK_TOPIC --><li class="icon-bookmark"><a href="{U_BOOKMARK_TOPIC}" title="{L_BOOKMARK_TOPIC}">&nbsp;&nbsp;&nbsp;&nbsp;{L_BOOKMARK_TOPIC}</a></li><!-- ENDIF -->
+				
+				<!-- IF U_BUMP_TOPIC --><li class="icon-bump"><a href="{U_BUMP_TOPIC}" title="{L_BUMP_TOPIC}">&nbsp;&nbsp;&nbsp;&nbsp;{L_BUMP_TOPIC}</a></li><!-- ENDIF -->
+				<!-- ENDIF -->
+				<!-- IF U_EMAIL_TOPIC -->
+						<li class="floatright"><a href="{U_EMAIL_TOPIC}" title="{L_EMAIL_TOPIC}" class="sendemail">{L_EMAIL_TOPIC}</a></li>
+					<!-- ENDIF -->
+					<!-- IF U_EMAIL_PM -->
+						<li class="floatright"><a href="{U_EMAIL_PM}" title="{L_EMAIL_PM}" class="sendemail">{L_EMAIL_PM}</a></li>
+					<!-- ENDIF -->
+					<!-- IF U_PRINT_TOPIC -->
+						<li class="floatright"><a href="{U_PRINT_TOPIC}" title="{L_PRINT_TOPIC}" accesskey="p" class="print">{L_PRINT_TOPIC}</a></li>
+					<!-- ENDIF -->
+					<!-- IF U_PRINT_PM -->
+						<li class="floatright"><a href="{U_PRINT_PM}" title="{L_PRINT_PM}" accesskey="p" class="print">{L_PRINT_PM}</a></li>
+					<!-- ENDIF -->
+				</ul>
+
+			</div>
+			<div class="navbar">
+				<ul class="mainlevel-nav">
+				<li class="icon-home"><!-- IF U_TEAM --><a href="{U_TEAM}">&nbsp;&nbsp;{L_THE_TEAM}</a> <!-- ENDIF --></li>
+				<!-- IF U_ACP --><li class="icon-ucp"><a href="{U_ACP}">{L_ACP}</a></li><!-- ENDIF -->
+				<!-- IF U_MCP --><li class="icon-ucp"><a href="{U_MCP}">{L_MCP}</a></li><!-- ENDIF -->
+				<!-- IF U_RESTORE_PERMISSIONS --><li><a href="{U_RESTORE_PERMISSIONS}">{L_RESTORE_PERMISSIONS}</a></li><!-- ENDIF -->
+				<li class="floatright"><!-- IF not S_IS_BOT --><a href="{U_DELETE_COOKIES}">{L_DELETE_COOKIES}</a><!-- ENDIF --></li>
+				<li class="floatright"><a href="">{S_TIMEZONE}</a></li>
+							
+				</ul>
+			</div>
+			
+			<div>
+				<a id="bottom" name="bottom" accesskey="z"></a>
+				<!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
+			</div>
+		</div>
+		<!-- end subcontainer -->		
+</div>
+<!-- end container -->	
+	
+	<div class="underfooter">
+	
+		<div id="incensewrapper">
+	    	<div id="altswf"></div>
+		</div>
+		
+		<div id="copyright">Powered by <a href="http://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br />
+		Jade © <a href="http://www.bbDKP.com/">bbDKP.com</a> &amp; Carl "Luccia" Woodhouse <a href="http://www.carlwoodhouse.com/">
+		<br />
+		©2004 Blizzard Entertainment, Inc. All rights reserved. World of Warcraft, Pandaria, Warcraft and Blizzard Entertainment 
+		are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+		This website is in no way related to World of Warcraft, Blizzard Entertainment, Inc. or any of its associates and partners.
+		<br/>
+
+		<!-- IF TRANSLATION_INFO --><br />{TRANSLATION_INFO}<!-- ENDIF -->
+		<!-- IF DEBUG_OUTPUT --><br />{DEBUG_OUTPUT}<!-- ENDIF -->
+		<!-- IF U_ACP --><br /><strong><a href="{U_ACP}">{L_ACP}</a></strong><!-- ENDIF -->
+		</div>
+		
+		
+	</div>
+
+</div>
+
+</div>
+
+<script type="text/javascript" src="{T_SUPER_TEMPLATE_PATH}/styleswitcher.js"></script>
+<script type="text/javascript" src="{T_SUPER_TEMPLATE_PATH}/forum_fn.js"></script>
+
+<!-- INCLUDE bbtips/bbtips_header.html -->
+</body>
+</html>
