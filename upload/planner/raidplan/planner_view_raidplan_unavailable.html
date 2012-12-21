@@ -74,10 +74,9 @@
 </div>
 <!-- ENDIF -->
 <!-- END unavailable -->
-
+<!-- BEGIN unavailable --><!-- IF unavailable.S_REQUEUE_SIGNUP -->
 <script type="text/javascript">
 jQuery(document).ready( function() 
-<!-- BEGIN unavailable --><!-- IF unavailable.S_REQUEUE_SIGNUP -->
 	{
 	jQuery("#prompt_{unavailable.RAIDPLAN_ID}_{unavailable.SIGNUP_ID}").overlay({
 		top: 260,
@@ -96,9 +95,8 @@ jQuery(document).ready( function()
 		triggers_{unavailable.RAIDPLAN_ID}_{unavailable.SIGNUP_ID}.eq(1).overlay().close();
 		return e.preventDefault();
 	});
-<!-- ENDIF --><!-- END unavailable -->
 });
 </script>
-
+<!-- ENDIF --><!-- END unavailable -->
 
 <!-- [-] UNAVAILABLE SIGNUPS -->
