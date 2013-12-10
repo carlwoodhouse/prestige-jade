@@ -6,14 +6,14 @@
 
 <!-- BEGIN raidroles -->
 <div id="raid_rolesignedup{raidroles.ROLE_ID}" style="width:160px; float:left; " >
-<div id="raid_rolesignedup_head{raidroles.ROLE_ID}" class="rolesignupheader" style="background-color:{raidroles.ROLE_COLOR};" > 
+<div id="raid_rolesignedup_head{raidroles.ROLE_ID}" class="rolesignupheader role-{raidroles.ROLE_NAME}" style="background-color:{raidroles.ROLE_COLOR};" > 
 	<!-- IF raidroles.S_ROLE_ICON_EXISTS --><img src="{raidroles.ROLE_ICON}" alt="{raidroles.ROLE_NAME}" />&nbsp;<!-- ELSE --><!-- ENDIF -->
 	<strong>{raidroles.ROLE_NAME}: {raidroles.ROLE_CONFIRMED}/{raidroles.ROLE_NEEDED}</strong>
 </div>
 <br />
 <!-- BEGIN confirmations -->
 
-<div id="raid_rolesignedup_body{raidroles.confirmations.SIGNUP_ID}" class="rolesignupbody" style="background-color:{raidroles.ROLE_COLOR};">
+<div id="raid_rolesignedup_body{raidroles.confirmations.SIGNUP_ID}" class="rolesignupbody role-{raidroles.ROLE_NAME}" style="background-color:{raidroles.ROLE_COLOR};">
 	<strong>{raidroles.confirmations.POSTER_URL}</strong><br />
 	<span><!-- IF raidroles.confirmations.S_RACE_IMAGE_EXISTS --><img src="{raidroles.confirmations.RACE_IMAGE}" alt="race_{raidroles.confirmations.CHARNAME}" />&nbsp;<!-- ELSE --><!-- ENDIF -->
 	<!-- IF raidroles.confirmations.S_CLASS_IMAGE_EXISTS --><img src="{raidroles.confirmations.CLASS_IMAGE}" alt="class_{raidroles.confirmations.CHARNAME}" /><!-- ELSE -->&nbsp;<!-- ENDIF -->

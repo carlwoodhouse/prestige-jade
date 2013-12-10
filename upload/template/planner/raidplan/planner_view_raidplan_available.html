@@ -8,14 +8,14 @@
 <!-- IF raidroles.ROLE_DISPLAY -->
 <div id="raid_role{raidroles.ROLE_ID}" style="width:160px; float:left; " >
 
-<div id="raid_role_head{raidroles.ROLE_ID}" class="rolesignupheader" style="background-color:{raidroles.ROLE_COLOR};" >
+<div id="raid_role_head{raidroles.ROLE_ID}" class="rolesignupheader role-{raidroles.ROLE_NAME}" style="background-color:{raidroles.ROLE_COLOR};" >
 	<!-- IF raidroles.S_ROLE_ICON_EXISTS --><img src="{raidroles.ROLE_ICON}" alt="" />&nbsp;<!-- ELSE --><!-- ENDIF -->
 	<strong>{raidroles.ROLE_NAME}</strong>
 </div>
 <br />
 
 <!-- BEGIN signups -->
-<div id="signup{raidroles.signups.SIGNUP_ID}" class="rolesignupbody" style="background-color:{raidroles.ROLE_COLOR};">
+<div id="signup{raidroles.signups.SIGNUP_ID}" class="rolesignupbody role-{raidroles.ROLE_NAME}" style="background-color:{raidroles.ROLE_COLOR};>
 	<strong>{raidroles.signups.POSTER_URL}</strong><br />
 	<span><!-- IF raidroles.signups.S_RACE_IMAGE_EXISTS --><img src="{raidroles.signups.RACE_IMAGE}" alt="race_{raidroles.signups.CHARNAME}" />&nbsp;<!-- ELSE --><!-- ENDIF -->
 	<!-- IF raidroles.signups.S_CLASS_IMAGE_EXISTS --><img src="{raidroles.signups.CLASS_IMAGE}" alt="class_{raidroles.signups.CHARNAME}" /><!-- ELSE -->&nbsp;<!-- ENDIF -->
