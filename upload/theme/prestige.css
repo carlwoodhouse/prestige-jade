@@ -1,2 +1,2 @@
 /* prestige fixes */
-.rolesignupbody.role-Healer, .rolesignupheader.role-Healer { color: #000; }
+.rolesignupbody, .rolesignupheader, .rolesignupbody a, .rolesignupbody a:visited, .rolesignupheader a, .rolesignupheader a:visited  { color: #000; }
